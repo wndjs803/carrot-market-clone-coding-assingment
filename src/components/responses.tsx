@@ -54,8 +54,15 @@ export default function Responses({
           placeholder="Write a response."
           errors={state?.fieldErrors[0]}
         />
-        <input className="hidden" type="hidden" name="tweetId" value={tweetId} />
-        <button className="ml-auto min-w-14 bg-stone-300 rounded-xl p-3">추가</button>
+        <input
+          className="hidden"
+          type="hidden"
+          name="tweetId"
+          value={tweetId}
+        />
+        <button className="ml-auto min-w-14 bg-sky-300 rounded-xl p-3">
+          추가
+        </button>
       </form>
       {responses.map((response) => (
         <div key={response.id} className="*:text-md flex items-center my-3">

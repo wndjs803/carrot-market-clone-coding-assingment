@@ -7,7 +7,7 @@ export default async function MainPage() {
   return (
     <div className="p-5 flex flex-col gap-5">
       <AddTweet />
-      <div className="border border-sky-200"></div>
+      {/* <div className="border border-sky-200"></div> */}
       <TweetList initialTweets={tweets} />
     </div>
   );
